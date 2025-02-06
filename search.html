@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Recipes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>शेफ रेसिपी मार्गदर्शक</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="search.html">Search Recipes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="filters">
+        <button onclick="filterDishes('all')">All</button>
+        <button onclick="filterDishes('breakfast')">Breakfast</button>
+        <button onclick="filterDishes('lunch')">Lunch</button>
+        <button onclick="filterDishes('drinks')">Drinks</button>
+        <button onclick="filterDishes('tea')">Tea</button>
+        <button onclick="filterDishes('coffee')">Coffee</button>
+    </div>
+
+    <input type="text" id="searchBar" placeholder="Search for a dish...">
+    <div id="searchResults"></div>
+
+    <h3>Search History</h3>
+    <ul id="historyList"></ul>
+
+    <!-- **Output Container for Calculated Ingredients** -->
+    <!-- Output Section -->
+    <div id="outputContainer" style="display: none;">
+        <h3>Calculated Ingredients:</h3>
+        <ul id="outputList"></ul>
+    
+        <!-- WhatsApp Share Button -->
+        <button id="shareButton" style="display: none;">📤 Share on WhatsApp</button>
+    </div>
+    
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
